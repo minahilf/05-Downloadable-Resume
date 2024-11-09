@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <title>Static Interactive Resume Builder</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="resume">
+            <header class="profile">
+                <img src="./Assets/profile picture.jpg" alt="profile" class="picture" id="infopic">
+                <div class="info">
+                    <h1><span id="infoName"></span></h1>
+                    <p class="subtitle"><span id="infoStitle"></span></span></p>
+                </div>
+            </header>
+            <div class="contact">
+                <div class="item">
+                    <img src="./Assets/phone.svg" alt="phone">
+                    <p class="cont"><span id="infoPhone"></span></p>
+                </div>
+                <div class="item">
+                    <img src="./Assets/mail.svg" alt="mail">
+                    <p class="cont"><span id="infoEmail"></span></p>
+                </div>
+                <div class="item">
+                    <img src="./Assets/linkedin.svg" alt="linkdin">
+                    <p class="cont"><span id="infoLink"></span></p>
+                </div>
+            </div>
+            <div class="description">
+                <p class="desc"><span id="infoIntro"></span></p>
+            </div>
+            <div class="experience">
+                <h3 class="exp-h">EXPERIENCE</h3>
+                <div class="logo">
+                    <h2 class="sub-h"><span id="infoSubTitle"></span></h2>
+                    <p class="exp"><span id="infoExp"></span></p>
+                </div>
+                <hr>
+                <div class="poster">
+                    <h2 class="sub-h"><span id="infoSubTitle1"></span></h2>
+                    <p class="exp"><span id="infoExp1"></span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="skill">
+                <h3 class="exp-h ">SKILLS</h3>
+                <h2 class="sub-h"><span id="infoskillh"></span></h2>
+                <p class="skills"><span id="infoskilld"></span></p>
+
+                <h2 class="sub-h"><span id="infoskillh2"></span></h2>
+                <p class="skills"><span id="infoskilld2"></span></p>
+                <h2 class="sub-h"><span id="infoskillh3"></span></h2>
+                <p class="skills"><span id="infoskilld3"></span></p>
+            </div>
+
+            <div class="education" id="education">
+                <hr>
+                <h3 class="exp-h">EDUCATION</h3>
+
+                <h2 class="sub-h"><span id="infoeduh"></span></h2>
+                <p class="edu"><span id="infoedud"></span></p>
+
+                <h2 class="sub-h"><span id="infoeduh2"></span></h2>
+                <p class="edu"><span id="infoedud2"></span></p>
+
+                <h2 class="sub-h"><span id="infoeduh3"></span></h2>
+                <p class="edu"><span id="infoedud3"></span></p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="btnprint">
+        <button id="edit">EDIT RESUME</button>
+        <button id="print">DOWNLOAD PDF</button>
+    <a href="" id="anchor"><button id="share">SHARE</button></a>
+    <button id="linkcopy">COPY LINK</button>
+
+    </div>
+    </div>
+    <script src="resume.js"></script>
+</body>
+
+</html>

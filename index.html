@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Resume Builder</title>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="builder">
+            <h1 class="main-h">DYNAMIC RESUME BUILDER</h1>
+            <form id="resume-form">
+                <div class="perosonal-info">
+                    <h3>PERSONAL INFO</h3>
+
+                    <label for="profile-picture">Choose Profile Picture:</label>
+                    <input type="file" id="ppic" name="profile-picture" accept="image/*" required class="pic">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="Title">Title:</label>
+                    <input type="text" id="title" name="title"> 
+
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone-no" name="phone">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="linkdIn">LinkdIn:</label>
+                    <input type="text" id="linkdin" name="lid">
+                </div>
+
+                <div class="intro">
+                    <h3>INTRODUCTION</h3>
+                    <label for="Intro">Introduction:</label>
+                    <textarea name="intro" id="intro" name="intro"></textarea>
+                </div>
+
+                <div class="experience">
+                    <h3>EXPERIENCE</h3>
+                    <label for="heading">Job Title </label>
+                    <input type="text" id="jtitle" placeholder="(e.g. Logo Designer)" name="jtitle">
+                    <label for="text">Description:</label>
+                    <textarea name="experience" id="exp" name="exp"></textarea>
+                    <label for="heading">Job Title 2</label>
+                    <input type="text" id="jtitle1" placeholder="(e.g. Logo Designer)" name="jtitle">
+                    <label for="text">Description:</label>
+                    <textarea name="experience" id="exp1" name="exp"></textarea>
+                </div>
+
+                <div class="skills">
+                    <h3>SKILLS</h3>
+                    <label for="heading">Skill Heading:</label>
+                    <input type="text" id="skills" placeholder=" (e.g. Programming Languges)" name="skills">
+                    <label for="text">Description:</label>
+                    <input type="text" id="skilld" name="skilld">
+
+                    <label for="heading">Skill Heading2:</label>
+                    <input type="text" id="skills2" placeholder=" (e.g. Programming Languges)" name="skills">
+                    <label for="text">Description:</label>
+                    <input type="text" id="skilld2" name="skilld">
+
+                    <label for="heading">Skill Heading3:</label>
+                    <input type="text" id="skills3" placeholder=" (e.g. Programming Languges)" name="skills">
+                    <label for="text">Description:</label>
+                    <input type="text" id="skilld3" name="skilld">
+                </div>
+
+                <div class="education">
+                    <h3>EDUCATION:</h3>
+                    <label for="text">Degree or Course:</label>
+                    <input type="text" id="degree" placeholder="e.g. BSCS" name="degree">
+                    <label for="text">Education:</label>
+                    <input type="text" id="edu" name="edu" placeholder="Govornor House (2023-till date)">
+
+                    <label for="text">Degree or Course2:</label>
+                    <input type="text" id="degree2" placeholder="e.g. BSCS" name="degree">
+                    <label for="text">Education:</label>
+                    <input type="text" id="edu2" name="edu" placeholder="Govornor House (2023-till date)">
+
+                    <label for="text">Degree or Course3:</label>
+                    <input type="text" id="degree3" placeholder="e.g. BSCS" name="degree">
+                    <label for="text">Education:</label>
+                    <input type="text" id="edu3" name="edu" placeholder="Govornor House (2023-till date)">
+                </div>
+
+                <div class="gen-btn">
+                    <button type="submit" class="btn" id="btn">Generate Resume</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

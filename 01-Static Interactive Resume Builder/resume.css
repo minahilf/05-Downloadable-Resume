@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Syne:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Syne:wght@400..800&display=swap');
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.resume{
+    width: 60%;
+    height: 100%;
+    border: 2px solid white;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.picture{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+h1{
+    margin: 0;
+    font-family: "spectral", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #2D3E5B;
+}
+
+.subtitle{
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #DB9291;
+    margin: 2px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.exp-h{
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #DB9291;
+    margin: 2px;
+    letter-spacing: 6px;
+    margin-top: 14px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.item img{
+    height: 15px;
+    width: 20px;
+}
+
+.cont{
+    font-size: 14px;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    margin: 5px;
+    color: #2D3E5B;
+}
+
+.description{
+    background-color: #EDEDED;
+}
+
+.desc{
+    font-family: "spectral", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 12px;
+}
+
+.sub-h{
+    font-family: "spectral",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: #2D3E5B;
+}
+
+.exp{
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+hr{
+    background-color: #EDEDED;
+    border: none;
+    height: 1px;
+}
+
+ .skills, .edu{
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    word-wrap: break-word;
+ }
+
+
+.btnprint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btnprint button {
+    padding: 10px;
+    width: 160px;
+    border: none;
+    background-color: #2D3E5B;
+    color: white;
+    font-family: "spectral", sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+ @media screen and (max-width:425px) {
+    .resume{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .picture{
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+    
+    .contact{
+        justify-content: center;
+    }
+
+   .exp-h{
+    font-size: 14px;
+   }
+
+   .sub-h{
+    font-size: 18px;
+   }
+
+
+   .skills .edu{
+    font-size: 13px;
+   }
+
+ 
+ }
+
+
+ 
+@media screen and (max-width:768px) {
+    .cont{
+        font-size: 12px;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+}
+
