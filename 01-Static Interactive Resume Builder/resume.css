@@ -201,19 +201,9 @@ hr{
     }
   
 
-    .btnprint a button{
-        width: 100px;
-        font-size: 12px;
-    }
 
     .btnprint .dbtn{
         font-size: 10px;
-        width: 100px;
-    }
-
-
-    .btnprint .cbtn{
-        font-size: 12px;
         width: 100px;
     }
 

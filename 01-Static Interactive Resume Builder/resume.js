@@ -1,6 +1,6 @@
 "use strict";
-let fullname = localStorage.getItem("name");
 window.addEventListener("load", () => {
+    let fullname = localStorage.getItem("name");
     let title = localStorage.getItem("title");
     let phone = localStorage.getItem("phone-no");
     let email = localStorage.getItem("email");
@@ -77,12 +77,4 @@ edit === null || edit === void 0 ? void 0 : edit.addEventListener("click", () =>
 let printpdf = document.getElementById("print");
 printpdf === null || printpdf === void 0 ? void 0 : printpdf.addEventListener("click", () => {
     window.print();
-});
-let baseurl = "http://127.0.0.1:5500/01-Static%20Interactive%20Resume%20Builder/resume.html";
-let uniqueurl = `${baseurl}?/${fullname}`;
-let linkcopy = document.getElementById("linkcopy");
-linkcopy === null || linkcopy === void 0 ? void 0 : linkcopy.addEventListener("click", () => {
-    navigator.clipboard.writeText(uniqueurl).then(() => {
-        alert("Copied");
-    });
 });

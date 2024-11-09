@@ -1,6 +1,7 @@
-let fullname = localStorage.getItem("name")       
 
    window.addEventListener("load", ()=>{
+    let fullname = localStorage.getItem("name")  
+
        let title = localStorage.getItem("title")
        let phone =  localStorage.getItem("phone-no")
        let email = localStorage.getItem("email")
@@ -95,6 +96,8 @@ let fullname = localStorage.getItem("name")
         let infopic :any = document.getElementById("infopic")
         infopic.src = profile
 
+
+
     })
     
  
@@ -108,14 +111,3 @@ printpdf?.addEventListener("click", ()=>{
     window.print()
 })
 
-
-
-let baseurl = "http://127.0.0.1:5500/01-Static%20Interactive%20Resume%20Builder/resume.html"
-let uniqueurl = `${baseurl}?/${fullname}`
-
-let linkcopy = document.getElementById("linkcopy")
-linkcopy?.addEventListener("click" , ()=>{
-    navigator.clipboard.writeText(uniqueurl).then(()=>{
-        alert("Copied")
-    })
-})
