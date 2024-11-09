@@ -78,20 +78,8 @@ let printpdf = document.getElementById("print");
 printpdf === null || printpdf === void 0 ? void 0 : printpdf.addEventListener("click", () => {
     window.print();
 });
-let share = document.getElementById("share");
-let anchor = document.getElementById("anchor");
-let username;
-if (fullname) {
-    username = fullname.toLowerCase().replace(/\s+/g, "-");
-}
-else {
-    username = "user";
-}
 let baseurl = "http://127.0.0.1:5500/01-Static%20Interactive%20Resume%20Builder/resume.html";
 let uniqueurl = `${baseurl}?/${fullname}`;
-share === null || share === void 0 ? void 0 : share.addEventListener("click", () => {
-    anchor === null || anchor === void 0 ? void 0 : anchor.setAttribute("href", uniqueurl);
-});
 let linkcopy = document.getElementById("linkcopy");
 linkcopy === null || linkcopy === void 0 ? void 0 : linkcopy.addEventListener("click", () => {
     navigator.clipboard.writeText(uniqueurl).then(() => {

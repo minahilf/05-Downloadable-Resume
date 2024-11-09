@@ -108,21 +108,10 @@ printpdf?.addEventListener("click", ()=>{
     window.print()
 })
 
-let share = document.getElementById("share")
-let anchor = document.getElementById("anchor")
-let username
-if(fullname){
-    username = fullname.toLowerCase().replace(/\s+/g, "-")
-} else {
-    username = "user"
-}
+
 
 let baseurl = "http://127.0.0.1:5500/01-Static%20Interactive%20Resume%20Builder/resume.html"
 let uniqueurl = `${baseurl}?/${fullname}`
-
-share?.addEventListener("click" , ()=>{
-anchor?.setAttribute("href", uniqueurl)
-})
 
 let linkcopy = document.getElementById("linkcopy")
 linkcopy?.addEventListener("click" , ()=>{
